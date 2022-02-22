@@ -28,6 +28,6 @@ Distributed under the GNU General Public License v3.0 License. See `LICENSE.md` 
 
 ## Contact
 
-Your Name - [@bashengaistaken](https://twitter.com/bashengaistaken) - email@example.com
+Yunus Emre Çelik - [@bashengaistaken](https://twitter.com/bashengaistaken) - yunusemre.celik@testinium.com
 
 Project Link: [https://github.com/yunusemrecelikk/KitapYurduSeleniumWebOtomasyonProjesi](https://github.com/yunusemrecelikk/KitapYurduSeleniumWebOtomasyonProjesi)
