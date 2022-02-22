@@ -18,7 +18,7 @@
 
 This project using Java with Selenium, Log4j, JUnit libraries. 
 
-This is my first selenium project.
+Also this is my first selenium project.
 
 
 ## License
