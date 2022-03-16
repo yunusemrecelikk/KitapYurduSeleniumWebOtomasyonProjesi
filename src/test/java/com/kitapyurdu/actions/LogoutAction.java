@@ -13,9 +13,10 @@ public class LogoutAction {
 
     public void logout() {
         try {
-            methods.Scroll(By.xpath("//*[@class='common-sprite'][1]/*"));
-            methods.ClickWithJavascript(By.xpath("//*[@id='header-top']//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[4]/*"));
-            String loginButtonText = methods.GetText(By.xpath("//*[@id='header-top']//*[1]//*[1]//*[1]/*"));
+            methods.WaitUntilClickable(By.id("content"));
+            methods.Scroll(By.xpath("//*[@class='common-sprite']//*"));
+            methods.ClickWithJavascript(By.xpath("//*[@id=\"header-top\"]//*[text()=\"Çıkış\"]"));
+            String loginButtonText = methods.GetText(By.xpath("//*[@class=\"menu-top-button login\"]//*"));
             Assert.assertEquals("Login button is not visible", "Giriş Yap", loginButtonText);
             methods.LogInsert("Succesfully logged out");
         } catch (Exception e) {

@@ -76,6 +76,10 @@ public class Methods {
         }
     }
 
+    public void ClearInput(By element) {
+        FindElement(element).clear();
+    }
+
     public boolean IsElementVisible(By element) {
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(element));
@@ -130,6 +134,15 @@ public class Methods {
 
     public void SelectByValue(By element, String text) {
         GetSelect(element).selectByValue(text);
+    }
+
+    public String GetSelectedOptionText(By element) {
+        try {
+            return new Select(FindElement(element)).getFirstSelectedOption().getText();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public String GetAttribute(By element, String attributeName) {
