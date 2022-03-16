@@ -18,7 +18,30 @@
 
 This project using Java with Selenium, Log4j, JUnit libraries. 
 
-Also this is my first selenium project.
+
+## Steps
+* Opens Kitapyurdu.com homepage
+* Login to website
+* Checks if logged in successfully
+* Searching for "Oyuncak" word
+* Scrolls to 7th product and adds 4 random products to favorites
+* Checks if successfully favorited products
+* Goes back to homepage
+* Opens Points Catalogue
+* Selects Türk Klasikleri
+* Selects "High Rated" from the filtering field on Türk Klasikleri page
+* Selects "Tüm Kitaplar" then "Hobi"
+* Selects random products on the page and adds to the basket
+* Selects "Listelerim" then "Favorilerim"
+* Removes 3rd favorited products from favorites list
+* Opens Basket Page
+* Increases quantity of the product in the basket
+* Selects "Ürün Satın Al"
+* Enters new address information
+* Purchases products with incorrect card information
+* Checks if error message appears
+* Goes back to homepage
+* Logs out from the account
 
 
 ## License
