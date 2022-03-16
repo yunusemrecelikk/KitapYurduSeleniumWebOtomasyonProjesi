@@ -34,15 +34,6 @@ public class Methods {
         logger.info(text);
     }
 
-    public void WaitMs(long milliseconds) {
-        try {
-            Thread.sleep(milliseconds);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-
     public WebElement FindElement(By element) {
         return wait.until(ExpectedConditions.presenceOfElementLocated(element));
     }
@@ -50,10 +41,6 @@ public class Methods {
     public List<WebElement> FindElements(By element) {
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
         return driver.findElements(element);
-    }
-
-    public String Test(By element) {
-        return jsdriver.executeScript("return arguments[0].attributes);", FindElement(element)).toString();
     }
 
     public void WaitUntilClickable(By element) {
@@ -96,14 +83,6 @@ public class Methods {
             actions.moveToElement(FindElement(element)).build().perform();
         } catch (Exception e) {
             LogInsert("Failed " + e.getMessage());
-        }
-    }
-
-    public void ScrollWithJavascript(By element) {
-        try {
-            jsdriver.executeScript("arguments[0].scrollIntoView();", FindElement(element));
-        } catch (Exception e) {
-            LogInsert("Failed to scroll with javascript: " + e.getMessage());
         }
     }
 
@@ -171,16 +150,6 @@ public class Methods {
             return null;
         }
     }
-
-//    public String RandomStringFromArr(List<> array) {
-//        try {
-//            int randomIndex = ThreadLocalRandom.current().nextInt(array.size());
-//            return array[randomIndex];
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            return null;
-//        }
-//    }
 
     public String IsItemAlreadyFavorited(By item) {
         try {

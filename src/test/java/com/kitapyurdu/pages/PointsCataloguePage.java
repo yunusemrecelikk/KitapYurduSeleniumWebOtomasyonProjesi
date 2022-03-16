@@ -29,7 +29,6 @@ public class PointsCataloguePage {
             methods.Click(By.cssSelector("img[title*=\"Puan Kataloğundaki Türk Klasikleri\"]"));
             methods.WaitUntilClickable(By.cssSelector(".grid_9"));
 
-//            methods.Click(By.cssSelector(".sort > select"));
             methods.SelectByText(By.cssSelector(".sort > select"), "Yüksek Oylama");
             methods.WaitUntilClickable(By.cssSelector(".grid_9"));
             methods.Scroll(By.xpath("//*[@class=\"has-open-menu\"]//*[@class=\"mn-strong common-sprite\"][text()=\"Tüm Kitaplar\"]"));
